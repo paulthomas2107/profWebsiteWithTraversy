@@ -118,6 +118,13 @@ navbar ul li a i {
   font-weight: bold;
 }
 
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -128,6 +135,13 @@ navbar ul li a i {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .btn {
@@ -219,11 +233,4 @@ navbar ul li a i {
 .bg-black {
   background: #000;
   color: #fff;
-}
-
-.card {
-  background-color: #fff;
-  color: #000;
-  border-radius: 10px;
-  padding: 20px;
 }
