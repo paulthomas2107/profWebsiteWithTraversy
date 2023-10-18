@@ -13,5 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle icon
     icon.classList.toggle('fa-plus');
     icon.classList.toggle('fa-minus');
+
+    // Toggle visibiliy of body
+    groupBody.classList.toggle('open');
+
+    // Close other open FAQs
+    const otherGroups = faqContainer.querySelectorAll('.faq-group');
+    otherGroups.forEach((otherGroup) => {
+      if (otherGroup != group) {
+        const otherGroupBody = otherGroup.querySelector('.faq-group-body');
+        const otherIcon = otherGroup.querySelector('.faq-group-header i');
+        otherGroupBody.classList.remove('open');
+        otherIcon.classList.remove('fa-minus');
+        otherIcon.classList.add('fa-plus');
+      }
+    });
   });
 });
