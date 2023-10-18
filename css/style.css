@@ -103,8 +103,19 @@ navbar ul li a i {
 }
 
 .testimonials .testimonials-heading {
-    width: 700px;
-    margin-bottom: 40px;
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
 }
 
 .container {
@@ -208,4 +219,11 @@ navbar ul li a i {
 .bg-black {
   background: #000;
   color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
 }
